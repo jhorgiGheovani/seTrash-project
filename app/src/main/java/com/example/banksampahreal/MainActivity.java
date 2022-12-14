@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         textView=(TextView) findViewById(R.id.signup);
         textView.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -37,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Login berhasi;", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Login berhasil", Toast.LENGTH_SHORT).show();
             }
         }));
     }
